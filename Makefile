@@ -18,10 +18,7 @@ options:
 .c.o:
 	${CC} -c ${CFLAGS} $<
 
-${OBJ}: config.h config.mk
-
-config.h:
-	cp config.def.h $@
+${OBJ}: config.mk
 
 cazan: ${OBJ}
 	${CC} ${LDFLAGS} -o $@ ${OBJ}

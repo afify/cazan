@@ -195,7 +195,8 @@ start:
 		pray_char = 'I';
 		next_prayer = isha_t - now;
 	} else {
-		pray_char = '?';
+		pray_char = 'F';
+		next_prayer = fajr_t + SEC_INDAY - now;
 	}
 
 	/*
